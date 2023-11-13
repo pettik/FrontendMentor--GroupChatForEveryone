@@ -1,4 +1,6 @@
-# Frontend Mentor - Meet landing page
+## ⚠⚠⚠ UPDATE: November 2023::: THIS IS A STARTER TEMPLATE - NO WEBISTE CODE ❗❗❗
+
+/* # Frontend Mentor - Meet landing page
 
 ![Design preview for the Meet landing page coding challenge](./preview.jpg)
 
@@ -85,4 +87,4 @@ The more specific you are with your questions the more likely it is that another
 
 We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
-**Have fun building!** 🚀
+**Have fun building!** 🚀 */
