@@ -114,6 +114,10 @@ img {
   display: grid;
 }
 
+.section{
+  padding-inline: 1.5rem;
+}
+
 .main {
   overflow: hidden; /* For animation ScrollReveal */
 }
@@ -193,7 +197,6 @@ img {
 .header__hero-section {
   grid-column: 1/3;
   text-align: center;
-  padding-inline: 1.5rem;
   margin-top: 3.5rem;
 }
 
@@ -239,4 +242,47 @@ img {
   border: 2px solid var(--color-dark-grey);
   padding: 1rem 1.4rem;
   display: flex;
+}
+
+
+/* GALLERY SECTION */
+.gallery__section{
+  width: 100%;
+  margin-top: 5.15rem;;
+  
+}
+
+.gallery__section-images{
+  padding-inline: .45rem;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap:2rem;
+}
+
+.gallery__section-images img{
+  border-radius: 1rem;
+}
+
+/* SMART MEETINGS SECTION */
+.smarter-meetings{
+  text-align: center;
+  margin-top: 5.3rem;
+}
+
+.h3-teal-title{
+  font-size: 1.25rem;
+  letter-spacing: 6.7px;
+  text-transform: uppercase;
+  color:var(--color-teal);
+}
+.smarter-meetings_title{
+  margin-top: 1.7rem;
+  line-height: 1.3;
+  font-size: 2.5rem;
+}
+
+.smarter-meetings_description{
+  margin-top: 2.4rem;
+  line-height: 1.55;
+  padding-inline: .4rem;
 }
