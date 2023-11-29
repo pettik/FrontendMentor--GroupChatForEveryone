@@ -14,8 +14,27 @@
   --colors-violet: #d9b8ff;
   --colors-light-shady: #fafafa;
 
-  /*========== Font and typography ==========*/
-  --body-font: 'Red Hat Display', sans-serif;
+
+/*========== Font and typography ==========*/
+--body-font: 'Red Hat Display', sans-serif;
+}
+
+
+/*=============== RESET ===============*/
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 /*=============== BASE ===============*/
@@ -37,13 +56,28 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 1;
+  font-size: 2.5rem;
+  line-height: 1.1;
 }
+
+
+@media(min-width:375px){
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media(min-width:768px){
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+}
+
 h2 {
   font-size: 2.5rem;
   line-height: 1.1;
 }
+
 h1,
 h2 {
   color: var(--colors-dark-purple);
@@ -51,4 +85,90 @@ h2 {
 p {
   font-size: 1.125rem;
   line-height: 1.444;
+}
+
+.overline {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.625;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--colors-teal);
+}
+
+/* Container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*=============== BUTTON ===============*/
+.btn {
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  width: 193px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 29px;
+  -webkit-border-radius: 29px;
+  -moz-border-radius: 29px;
+  -ms-border-radius: 29px;
+  -o-border-radius: 29px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.btn .version {
+  margin-left: 4px;
+}
+.teal {
+  background-color: var(--colors-teal);
+}
+.teal .version {
+  color: var(--colors-cyan);
+}
+.teal:hover {
+  background-color: var(--colors-light-teal);
+}
+.teal:focus {
+  outline: 2px solid var(--colors-cyan);
+}
+.teal:active {
+  background-color: var(--colors-light-shady);
+  color: var(--colors-teal);
+}
+.purple {
+  background-color: var(--colors-purple);
+}
+.purple .version {
+  color: var(--colors-violet);
+}
+.purple:hover {
+  background-color: var(--colors-light-purple);
+}
+.purple:focus {
+  outline: 2px solid var(--colors-teal);
+}
+.purple:active {
+  background-color: var(--colors-light-shady);
+  color: var(--colors-teal);
+}
+
+
+/*=============== HEADER ===============*/
+.header__container{
+  height: 108px;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header__logo{
+  max-height: 28px;
 }
