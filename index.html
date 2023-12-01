@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/ico" sizes="32x32" href="assets/favicon.ico" />
+    <link rel="icon" type="image/ico" sizes="32x32" href="assets/favicon-32x32.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Meet landing page | Frontend Mentor</title>
   </head>
@@ -11,6 +11,7 @@
   <body>
     <!--  HEADER: LOGO section -->
     <header class="header">
+      <div class="header__info"></div>
       <div class="header__container container">
         <a href="#" class="header__logo">
           <img src="assets/logo.svg" alt="logo image" />
@@ -23,11 +24,11 @@
       <section class="hero">
         <div class="hero__container container">
           <div class="hero__img"></div>
-          <h1>Group for Everyone</h1>
+          <h1>Group Chat for Everyone</h1>
           <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
             <div class="hero__btns">
-              <a class="hero__btn-download btn teal">Download <span class="version">v1.3</span></a>
-              <a href="What is it?" class="hero__btn-what btn purple">What is it?</a>
+              <a href="#" class="hero__btn-download btn teal">Download <span class="version">v1.3</span></a>
+              <a href="#" class="hero__btn-what btn purple">What is it?</a>
             </div>
         </div>
       </section>
@@ -63,6 +64,40 @@
     </main>
 
     <!-- FOOTER  -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h2>Experience more together</h2>
+        <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+        <a href="#" class="footer__btn-download btn purple">
+          Download
+          <span class="version">v1.3</span>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+ 
+      
+          const showMessage = () =>{
+
+        if(!document.body.querySelector('.show')){
+              
+              const messageInfo = document.querySelector('.header__info');
+              let messageEl = document.createElement('p');
+
+              const messageText = document.createTextNode('❗ This is just for TESTING purpose 🧪');
+              messageEl.appendChild(messageText);
+
+              messageEl.classList.add('show');
+              messageInfo.appendChild(messageEl);
+
+              setTimeout(_ => {
+               document.body.querySelector('.show').remove()
+            }, 4000)
+          }
+      }
+      
+      document.body.querySelectorAll('.btn').forEach((btn) => btn.addEventListener('click',showMessage));
+    </script>
   </body>
 </html>
