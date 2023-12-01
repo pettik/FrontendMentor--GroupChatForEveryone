@@ -23,12 +23,16 @@ I was able to use any tools I liked to help me complete this challenge.
 
 ### Screenshot
 
-![](./design/desktop-preview.jpg)
+### Desktop design 💻
+<img src="design/meet-landing-page_desktop.png" >
+
+### Mobile design 📱
+<img src="design/meet-landing-page_mobile.png" width="300px">
 
 ### Links
 
-- Solution URL: [[FrontendMentor--fe-profile-card-component_sass](https://github.com/pettik/FrontendMentor--fe-profile-card-component_sass)](https://github.com/pettik/FrontendMentor--meet-landing-page)
-- Live Site URL: [[https://profile-card-component-sass.netlify.app/](https://profile-card-component-sass.netlify.app/)](https://pettik-meet-landing-page.netlify.app/)
+- Solution URL: [https://github.com/pettik/FrontendMentor--meet-landing-page](https://github.com/pettik/FrontendMentor--meet-landing-page)
+- Live Site URL: ➡ [https://pettik-meet-landing-page.netlify.app/](https://pettik-meet-landing-page.netlify.app/) ⬅
 
 ## Author
 
